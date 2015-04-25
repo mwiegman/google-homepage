@@ -1,0 +1,130 @@
+@import url("http://weloveiconfonts.com/api/?family=typicons");
+
+/* typicons */
+[class*="typicons-"]:before {
+  font-family: 'Typicons', sans-serif;
+}
+
+
+html {
+    height: 100%;
+    overflow: hidden;
+
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.nav {
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 0px;
+    padding-right: 30px;
+    line-height: 24px;
+   
+}
+
+.nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 5px;
+    color: #404040;
+    font-size: 13px;
+    font-family: Arial;
+}
+
+li:nth-child(4n) {
+      color: #878787;  
+      font-size: 30px;
+      position: relative;
+      top: 10px; 
+      right: 5px;  
+}
+
+
+li:nth-child(5n){
+    background-color: #4387FB;
+    color: white;
+    font-weight: bold;
+    padding: 0 10px;
+    border: solid #4387FB;
+    border-radius: 2px;
+}
+
+.space {
+    height: 185px;
+    width: 100%;
+}
+
+.logo img {
+    height: 95px;
+    width: 269px;
+    padding-bottom: 16px;
+}
+
+.search {
+    padding-top: 5px;
+     
+}
+
+.search input {
+    height: 30px;
+    width: 570px;
+    border: solid rgb(217, 217, 217) 1px;
+}
+
+.typicons-microphone {
+    color: #878787;
+    font-size: 25px;
+    position: relative;
+    left: -25px;
+    top: 8px;
+}
+
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    padding: 8px;
+    margin: 15px 8px;
+    background-color: rgb(245, 245, 245);
+    border: solid rgba(0, 0, 0, 0.0980392) 1px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 11px;
+    color: rgb(68, 68, 68);
+    line-height: 27px;
+    padding: 0 8px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-family: arial;
+    font-weight: normal;
+    font-size: 13px;
+    background-color: #F2F2F2;
+    border-top: solid rgba(0, 0, 0, 0.0980392) 1px;
+}
+
+
+footer li {
+    display: inline-block;
+    padding-right: 15px;
+    color: #878787;
+}
+
+
