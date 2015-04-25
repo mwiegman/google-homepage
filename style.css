@@ -76,9 +76,15 @@ li:nth-child(5n){
 }
 
 .search input {
-    height: 30px;
-    width: 570px;
-    border: solid rgb(217, 217, 217) 1px;
+    height: 27.9971580505371px;
+    width: 568px;
+    border-style: solid;
+    border-width: 0.909090876579285px;
+    border-bottom-color: rgb(217, 217, 217);
+    border-right-color: rgb(217, 217, 217);
+    border-left-color: rgb(217, 217, 217);
+    border-top-color:  rgb(192, 192, 192);
+    font-size: 13px;
 }
 
 .typicons-microphone {
