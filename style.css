@@ -1,25 +1,53 @@
-@import url("http://weloveiconfonts.com/api/?family=typicons");
+/* icon font*/
 
-/* typicons */
-[class*="typicons-"]:before {
-  font-family: 'Typicons', sans-serif;
+@font-face {
+  font-family: 'icomoon';
+  src:url('fonts/icomoon.eot?-5xcmyi');
+  src:url('fonts/icomoon.eot?#iefix-5xcmyi') format('embedded-opentype'),
+    url('fonts/icomoon.woff?-5xcmyi') format('woff'),
+    url('fonts/icomoon.ttf?-5xcmyi') format('truetype'),
+    url('fonts/icomoon.svg?-5xcmyi#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-grid:before {
+  content: "\e601";
+}
+
+.icon-microphone:before {
+  content: "\e600";
+}
+
+/*General*/
 
 html {
     height: 100%;
     overflow: hidden;
-
 }
 
 body {
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
+    font-family: arial;
+    font-size: 13px;
 }
+
+
+/* Top navigation */
 
 .nav {
     height: 50px;
@@ -29,26 +57,35 @@ body {
     padding-top: 0px;
     padding-right: 30px;
     line-height: 24px;
-   
 }
 
 .nav li {
     display: inline-block;
     list-style: none;
-    padding: 0 5px;
+    padding: 0 8px;
     color: #404040;
-    font-size: 13px;
-    font-family: Arial;
+}
+
+.nav a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.nav a:hover {
+    text-decoration: underline;
 }
 
 li:nth-child(4n) {
       color: #878787;  
-      font-size: 30px;
+      font-size: 32px;
       position: relative;
-      top: 10px; 
-      right: 5px;  
+      top: 6px; 
+      right: 6px;  
 }
 
+.icon-grid:hover {
+    color: rgb(68, 68, 68);
+}
 
 li:nth-child(5n){
     background-color: #4387FB;
@@ -59,42 +96,45 @@ li:nth-child(5n){
     border-radius: 2px;
 }
 
-.space {
-    height: 185px;
-    width: 100%;
+
+/* Logo, Search, and Buttons */
+
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.logo img {
+.main img {
     height: 95px;
     width: 269px;
-    padding-bottom: 16px;
+    padding-top: 195px;
 }
 
 .search {
-    padding-top: 5px;
-     
+    padding-top: 20px;     
 }
 
-.search input {
-    height: 27.9971580505371px;
-    width: 568px;
+input[type="search"] {
+    height: 28px;
+    width: 575px;
     border-style: solid;
-    border-width: 0.909090876579285px;
-    border-bottom-color: rgb(217, 217, 217);
+    border-width: 0.9px;
+    border-top-color:  rgb(192, 192, 192); 
     border-right-color: rgb(217, 217, 217);
     border-left-color: rgb(217, 217, 217);
-    border-top-color:  rgb(192, 192, 192);
-    font-size: 13px;
+    border-bottom-color: rgb(217, 217, 217);
 }
 
-.typicons-microphone {
-    color: #878787;
-    font-size: 25px;
+.icon-microphone {
+    color: #666;
+    font-size: 18px;
     position: relative;
     left: -25px;
-    top: 8px;
+    top: 3px;
 }
-
 
 .buttons {
     text-align: center;
@@ -114,23 +154,53 @@ button {
     padding: 0 8px;
 }
 
+/* Bottom Navigation */
+
 footer {
     position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
-    font-family: arial;
-    font-weight: normal;
-    font-size: 13px;
     background-color: #F2F2F2;
     border-top: solid rgba(0, 0, 0, 0.0980392) 1px;
 }
 
+footer ul {
+    padding: 0;
+}
 
 footer li {
     display: inline-block;
-    padding-right: 15px;
     color: #878787;
 }
+
+footer a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.left {
+    postion: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.left li {
+    padding-left: 30px;
+}
+
+.right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.right li {
+    padding-right: 30px;
+}
+
 
 
